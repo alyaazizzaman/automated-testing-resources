@@ -6,23 +6,26 @@ var expect = chai.expect;
 
 describe("testing math library", function(){
   describe('testing addition', function(){
-    it('should add 1+1 to equal 2', function() {
+    it('should add 1 to 1 to equal 2', function() {
       expect(math.add(1,1)).to.equal(2);
     });
   });
   describe('testing subtraction', function() {
-    it('should subtract 1-1 to equal 0', function(){
+    it('should subtract 1 from 1 to equal 0', function(){
       expect(math.subtract(1,1)).to.equal(0);
     });
   });
   describe('testing multiplication', function() {
-    it('should multiply 3*2 to equal 6', function () {
+    it('should multiply 3 by 2 to equal 6', function () {
       expect(math.multiply(3,2)).to.equal(6);
     });
   });
   describe('testing division', function() {
-    it('should divide 9*3 to equal 3', function() {
+    it('should divide 9 by 3 to equal 3', function() {
       expect(math.divide(9,3)).to.equal(3);
+    });
+    it('should divide 10 by 0 to equal null', function() {
+      expect(math.divide(10,0)).to.equal(null);
     });
   });
   describe('testing power', function(){
