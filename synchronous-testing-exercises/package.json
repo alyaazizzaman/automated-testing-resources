@@ -1,7 +1,8 @@
 {
-  "name": "hello-world-test",
+  "name": "synchronous-testing-exercises",
   "version": "1.0.0",
-  "main": "helloWorld.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
@@ -10,9 +11,5 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^2.4.5"
-  },
-  "directories": {
-    "test": "test"
-  },
-  "description": ""
+  }
 }
